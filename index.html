@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    let a = " 2215:53:23";
+    let b = "674:08:32";
+
+    let data1 = a.split(":").map((x) => parseInt(x));
+    let data2 = b.split(":").map((x) => parseInt(x));
+    console.log(data1);
+    console.log(data2);
+
+    let sum = [];
+
+    for (let index = 0; index < data1.length; index++) {
+      sum.push(data1[index] + data2[index]);
+    }
+    console.log(sum.join(":"), "sum");
+  </script>
+</html>
+!
